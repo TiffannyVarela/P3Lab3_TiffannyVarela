@@ -101,8 +101,12 @@ class Zoologico{
 			sabana.push_back(sab);
 		}
 		
-		void printZona(vector <Animal*> x){
 			
+		void clear(vector <Animal*> x){
+			x.clear();
+				if(x.empty()){
+					x.clear();
+				}
 		}
 	
 		~Zoologico(){

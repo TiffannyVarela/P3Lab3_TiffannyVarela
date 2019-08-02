@@ -40,11 +40,11 @@ class Pata{
 			this->largo.assign(largo);
 		}
 		
-		string getTipo(){
+		string getTipopata(){
 			return this->tipo;
 		}
 		
-		void setTipo(string tipo){
+		void setTipopata(string tipo){
 			this->tipo.assign(tipo);
 		}
 		

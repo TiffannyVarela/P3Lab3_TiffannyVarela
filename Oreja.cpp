@@ -10,13 +10,14 @@ using namespace std;
 
 class Oreja{
 	private:
-		string tamanio, cap_audicion;
+		string tamanio;
+		double cap_audicion;
 		
 	public:
 		Oreja(){
 		}
 		
-		Oreja(string tamanio, string cap_audicion){
+		Oreja(string tamanio, double cap_audicion){
 			this->tamanio=tamanio;
 			this->cap_audicion=cap_audicion;
 		}
@@ -29,12 +30,12 @@ class Oreja{
 			this->tamanio.assign(tamanio);
 		}
 		
-		string getCap_audicion(){
+		double getCap_audicion(){
 			return this->cap_audicion;
 		}
 		
-		void setCap_audicion(string cap_audicion){
-			this->cap_audicion.assign(cap_audicion);
+		void setCap_audicion(double cap_audicion){
+			this->cap_audicion=cap_audicion;
 		}
 		
 		void printOreja(){
