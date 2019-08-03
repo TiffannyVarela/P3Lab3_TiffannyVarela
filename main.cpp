@@ -105,6 +105,10 @@ int main(){
 				
 			case 2:
 				for(int i=0; i<espera.size(); i++){
+					espera.at(i)->print();
+				}
+				
+				for(int i=0; i<espera.size(); i++){
 					cout<<"1"<<endl;
 					if(espera.at(i)->getTipo()=="Articos"){
 						cout<<"2"<<endl;
@@ -141,7 +145,7 @@ int main(){
 				break;
 				
 			case 4:
-				cout<<"Saliendo"<<endl;
+				
 				espera.clear();
 				if(espera.empty()){
 					espera.clear();
@@ -150,6 +154,8 @@ int main(){
 				zoo->clear(zoo->getDesertica());
 				zoo->clear(zoo->getJungla());
 				zoo->clear(zoo->getSabana());
+				
+				cout<<"Saliendo"<<endl;
 				break;
 		}
 	}while(opc!=4);

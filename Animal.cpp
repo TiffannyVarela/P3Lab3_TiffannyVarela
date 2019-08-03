@@ -111,10 +111,10 @@ class Animal{
 			this->cola=cola;
 		}	
 		
-		void printPelaje(){
-			cout<<"Animal:";
-			cout<<setw(10)<<"Nombre de Especie: "<<nombre_especie;
-			cout<<setw(10)<<"Nombre del Animal: "<<nombre;
+		void print(){
+			cout<<"Animal:"<<endl;
+			cout<<setw(10)<<"Nombre de Especie: "<<nombre_especie<<endl;
+			cout<<setw(10)<<"Nombre del Animal: "<<nombre<<endl;
 			cout<<setw(10)<<"Tamanio: "<<tamanio<<endl;
 			cout<<setw(10)<<"Tipo: "<<tipo<<endl;
 			patas->printPata();
